@@ -19,7 +19,7 @@ workflows:
           failure: false
   test_linux:
     name: Linux test workflow
-    instance_type: linux_x2
+    instance_type: linux
     scripts:
       - name: Set Android SDK location
         script: |
