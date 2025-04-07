@@ -1,6 +1,9 @@
 workflows:
   native-android:
     name: Android
+    environment:
+      xcode: 16.3
+      ndk: 28.0.13004108
     scripts:
       - name: Set Android SDK location
         script: |
@@ -21,6 +24,7 @@ workflows:
     name: Linux test workflow
     instance_type: linux_x2
     environment:
+      ubuntu: 24.04
       ndk: 28.0.13004108
     scripts:
       - name: Set Android SDK location
